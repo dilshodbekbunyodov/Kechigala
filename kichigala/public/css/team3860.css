@@ -1,0 +1,160 @@
+.team-a{
+    width: 100%;
+    background: #F4F4F4;
+}
+
+.team-a-inset{
+    width: 100%;
+    max-width: 1000px;
+    padding: 140px 0px 80px 0px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-a-inset h2{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.team-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* background-color: #2196F3; */
+    /* padding: 10px; */
+    grid-gap: 40px;
+}
+
+.s-c-box{
+    /* background-color: #022B4B; */
+    padding: 20px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+
+.s-c-box img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.s-c-box h3{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: .2em 0px;
+}
+
+.s-c-box p{
+    margin: 0px;
+    font-size: .9rem;
+}
+
+.s-c-social-box{
+    /* display: none; */
+    height: 300px;
+    width: 100%;
+    left: 0px;
+    top: 20px;
+    position: absolute;
+    padding: 0px 20px;
+    transition: .3s;
+    opacity: 0;
+    /* background-color: bisque; */
+}
+
+.s-c-social-box-inset{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #0000008f;
+}
+
+.s-c-social-box a{
+    display: flex;
+    align-items: center;
+    /* background-color: violet; */
+    margin: 20px 5px;
+}
+
+.s-c-social-box i{
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.s-c-box:hover .s-c-social-box{
+    /* display: block; */
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 1340px){
+    .team-a{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .s-c-box img, .s-c-social-box-inset{
+        height: 260px;
+    }
+}
+
+
+@media screen and (max-width: 950px){
+
+    .team-container{
+        grid-template-columns: 1fr 1fr;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    .team-container{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+
+    .team-container{
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 20px;
+    }
+
+}
+
+
+@media screen and (max-width: 550px){
+
+    .team-container{
+        grid-template-columns: 1fr;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .team-a-inset{
+        padding-top: 120px;
+    }
+}
+
+@media screen and (max-width: 440px){
+    .team-container {
+        padding-left: 30px;
+        padding-right: 30px;}
+}

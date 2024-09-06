@@ -1,0 +1,292 @@
+.product-container{
+    width: 100%;
+    margin-top: 140px;
+    padding-bottom: 80px;
+}
+
+.product-container-inset{
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.product-container-l{
+    position: relative;
+}
+
+.product-container-r{
+    flex: 1;
+}
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    position: sticky;
+    left: 0px;
+    top: 100px;
+}
+
+.navbar a {
+    padding: .8rem 1rem;
+    width: 200px;
+    border-radius: 4px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #022B4B;
+    background-color: #f4f4f4;
+    font-size: .9rem;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: .2s;
+    padding-right: 2rem;
+
+}
+
+.navbar a span{
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+
+.navbar a::after{
+    content: "\f061";
+    font-weight: 600;
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    right: 15px;
+}
+
+.navbar a:hover {
+    color: #4B67AE;
+}
+
+.navbar a.active {
+    background-color: #eeeeee;
+    color: #4B67AE;
+
+}
+
+
+
+
+
+.section{
+    display: none;
+    padding: 0px 10px 0px 20px;
+    background-color: #fff;
+
+    width: 100%;
+    border-left: 2px solid #f4f4f4;
+    font-size: .9rem;
+
+    flex-direction: row-reverse;
+}
+
+.section-product-left{
+    flex: 1;
+    padding-left: 15px;
+}
+
+
+.section-product-left img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    margin: 1rem 0px;
+}
+
+
+
+.section-product-left table{
+    border-spacing: 0;
+    border-collapse: collapse;
+    background: #f4f4f4;
+    font-weight: 400;
+    width: 100%;
+}
+
+.section-product-left table td{
+    border: 1px solid #b2b2b2;
+    padding: 8px;
+    vertical-align: top;
+}
+
+.nowrap-td,
+.section-product-right table tr td:nth-child(1) {
+    white-space: nowrap;
+    width: 1%;
+}
+
+
+
+.section-product-right{
+    flex: 1.8;
+    /* padding-left: 15px; */
+    padding: 0px 30px 0px 10px;
+}
+
+.section-product-right p{
+    font-weight: 400;
+}
+
+
+
+.table-container{
+    overflow: auto;
+}
+
+.section-product-right table{
+    width: 100% !important;
+     border-spacing: 0;
+    border-collapse: collapse;
+}
+
+
+
+
+.section-product-right table td, th{
+    border: 1px solid #b2b2b2;
+    padding: 3px 5px;
+    font-size: .9rem;
+}
+
+
+
+.section.active {
+    display: flex;
+}
+
+
+
+@media screen and (max-width: 1340px){
+    .product-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .section-product-left{
+        display: flex;
+        flex-direction: row;
+        padding-left: unset;
+    }
+
+    .section-product-right{
+        padding-right: unset;
+        padding-left: unset;
+    }
+
+    .section{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .section-product-left img{
+        width: unset;
+        width: 40%;
+        margin: unset;
+        margin-right: 20px;
+    }
+
+    .section-product-descriprion{
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .product-container-inset{
+        flex-direction: column;
+    }
+
+    .product-container-l{
+        height: 68px;
+    }
+
+    .navbar{
+        flex-direction: row;
+        overflow: auto;
+        position: absolute;
+        top: 0px;
+        background: #ffffff;
+        width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .navbar::-webkit-scrollbar{
+        display: none;
+    }
+
+
+
+    .navbar a{
+        width: unset;
+        white-space: nowrap;
+        margin-right: unset;
+        padding: 0.8rem 1rem;
+    }
+
+
+    .navbar a::after{
+        display: none;
+    }
+
+    .container{
+        margin-top: 20px;
+    }
+
+    .section{
+        border: none;
+        padding: 0px 10px;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 80px;
+        padding: 20px 30px;
+        border-bottom: 2px solid #f4f4f4;
+    }
+
+}
+
+@media screen and (max-width: 650px){
+
+    .section-product-left{
+        flex-direction: column;
+        padding-right: unset;
+        align-items: center;
+    }
+
+    .section-product-left img{
+        max-width: 400px;
+        width: 100%;
+        margin-right: unset;
+    }
+
+    .section-product-descriprion{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 550px){
+
+    .product-container{
+        margin-top: 120px;
+    }
+
+
+}

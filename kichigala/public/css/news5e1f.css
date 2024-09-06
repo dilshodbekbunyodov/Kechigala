@@ -1,0 +1,138 @@
+.news-container{
+    width: 100%;
+    padding: 140px 0px 0px 0px;
+}
+
+.news-container-inset{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+}
+
+.news-container-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    /* padding-right: 40px; */
+    align-items: center;
+}
+
+
+.news-container-left-inset{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+}
+
+.news-container-left-inset h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0px;
+    text-align: center;
+    max-width: 800px;
+}
+
+.news-container-left-inset span{
+    font-size: .9rem;
+    color: gray;
+    margin: .6rem 0px;
+}
+
+.news-img-box{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.news-img-box img{
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-paragraph{
+    padding: 20px 0px;
+
+}
+
+.news-paragraph p{
+    font-weight: 400;
+    font-size: .9rem;
+    text-align: justify;
+}
+
+
+
+
+.news-container-right{
+    display: none;
+    flex-direction: column;
+    padding-left: 40px;
+    align-items: flex-start;
+    flex: 1;
+    gap: 30px;
+}
+
+.news-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.news-box img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-box-inset{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.news-box-inset span{
+    font-size: .9rem;
+    font-weight: 400;
+    color: gray;
+}
+
+.news-box-inset h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 6px 0px;
+}
+
+.news-box-inset p{
+    padding-top: 10px;
+    border-top: 1px solid gray;
+    margin: 0px;
+    font-size: .8rem;
+    font-weight: 400;
+    color: gray;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 1340px){
+    .news-container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+
+    .news-container{
+        padding-top: 120px;
+    }
+}

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]>
+<html lang="ru" class="ie7"><![endif]-->
+<!--[if IE 8 ]>
+<html lang="ru" class="ie8"><![endif]-->
+<!--[if IE 9 ]>
+<html lang="ru" class="ie9"><![endif]-->
+<html lang="ru">
+<!--<![endif]-->
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <!-- meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="ajax/libs/slick-carousel/1.5.8/slick-theme.min.css">
+    <link rel="stylesheet" href="ajax/libs/slick-carousel/1.5.8/slick.css">
+    <link rel="stylesheet" href="kichigala/public/css/index7b30.css?v=4">
+    <link rel="stylesheet" href="kichigala/public/css/team3860.css?v=1">
+    <link rel="stylesheet" href="kichigala/public/css/news5e1f.css?v=2">
+    <link rel="stylesheet" href="kichigala/public/css/newsletter5e1f.css?v=2">
+    <link rel="stylesheet" href="kichigala/public/css/layout3860.css?v=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="ajax/libs/font-awesome/6.4.0/css/brands.min.css">
+    <meta property="og:site_name" content="Baxt Plimer" />
+    <title>Baxt Polimer</title>
+    <meta property="og:title" content="Baxt Polimer" />
+    <meta name="description" content="Baxt Polimer" />
+    <meta property="og:description" content="Baxt Polimer">
+</head>
+
+<body id="main">
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        // $errors['result'][0]
+    </script>
+
+
+    <div class="header">
+        <div class="header-inset">
+            <div class="sub-header">
+                <div class="sub-header-inset">
+                    <a target="_blank" class="linkedin" href="#"></a>
+                    <a target="_blank" class="facebook" href="#"></a>
+                    <a target="_blank" class="instagram" href="#"></a>
+                    <a target="_blank" class="whatsapp" href="#"></a>
+                </div>
+            </div>
+            <div id="myHeader" class="main-header">
+                <div class="main-header-inset">
+                    <div class="head-section head-s-a">
+                        <a class="logo" href="#">
+                            <img style="object-fit: contain; width: auto;" src="kichigala/public/images/logo/logo.png"
+                                alt="">
+                        </a>
+                    </div>
+                    <div class="head-section head-s-b">
+                        <ul>
+                            <li>
+                                <a href="#main" data-i18n-key="our_company"></a>
+                                <!-- <div class="nav-box">
+                                    <a href="#">О нас</a>
+                                    <a href="#">Условия Оплаты</a>
+                                    <a href="#">Методы Доставки</a>
+                                    <a href="#">Каталог</a>
+                                </div> -->
+                            </li>
+                            <li><a href="#products" data-i18n-key="products"></a></li>
+                            <li><a href="#comand" data-i18n-key="our_team"></a></li>
+                        </ul>
+                    </div>
+                    <div class="head-section head-s-c">
+                        <div class="head-section head-s-c">
+                            <a onclick="getLang('uz')" id="uz-button" style="display: none; cursor: pointer;">UZ</a>
+                            <a onclick="getLang('ru')" id="ru-button" style="display: none; cursor: pointer;">RU</a>
+                            <a onclick="getLang('en')" id="en-button" style="display: none; cursor: pointer;">EN</a>
+                            <a class="offer-btn" href="#" data-i18n-key="contacts"></a>
+                        </div>
+                    </div>
+                    <div class="head-section head-s-d">
+                        <nav role='navigation'>
+                            <div id="menuToggle">
+                                <input type="checkbox" />
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <ul id="menu">
+                                    <li>
+                                        <a href="#" data-i18n-key="our_company"></a>
+                                    </li>
+                                    <li><a href="#products" data-i18n-key="products"></a></li>
+                                    <li><a href="#comand" data-i18n-key="our_team"></a></li>
+                                    <li>
+                                        <!-- onclick="setTimeout(function(){window.location.reload()}, 100)" -->
+                                        <a href="#offer" data-i18n-key="contacts"></a>
+                                    </li>
+
+                                    <li class="submenu-social">
+                                        <a target="_blank" href="#" class="linkedin"></a>
+                                        <a target="_blank" href="#" class="facebook"></a>
+                                        <a target="_blank" href="#" class="instagram"></a>
+                                        <a target="_blank" class="whatsapp"></a>
+                                    </li>
+
+                                    <li style="display: flex;">
+                                        <div data-i18n-key="lang">
+
+                                        </div>:
+                                        <div style="margin: 0 10px;">
+                                            <a onclick="getLang('uz')" id="uz-button"
+                                                style="display: none; cursor: pointer;">UZ</a>
+                                            <a onclick="getLang('ru')" id="ru-button"
+                                                style="display: none; cursor: pointer;">RU</a>
+                                            <a onclick="getLang('en')" id="en-button"
+                                                style="display: none; cursor: pointer;">EN</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="overlay">
+        <div id="progstat"></div>
+        <div id="progress"></div>
+    </div>
+
+
+    <div class="hero">
+        <div class="hero-inset">
+            <div class="hero-l">
+                <h2 data-i18n-key="about_company">MCHJ «BAXT POLIMER» qo‘shma korxonasi barcha turdagi polipropilen
+                    qoplarni ishlab chiqaradi va
+                    ulgurji hamda arzon
+                    narxlarda realizasiya qiladi.</h2>
+                <!-- <a href="#">Исследуйте</a> -->
+            </div>
+            <div class="hero-r">
+                <p data-i18n-key="reason_one"></p>
+                <p data-i18n-key="reason_two"></p>
+                <p data-i18n-key="reason_three"></p>
+                <p data-i18n-key="reason_four"></p>
+
+                <br>
+                <span data-i18n-key="bag_size"></span><br>
+                <span data-i18n-key="width"></span><br>
+                <span data-i18n-key="height"></span>
+            </div>
+        </div>
+        <div class="sub-hero">
+            <img src="kichigala/public/images/pages/company1.jpg" alt=""
+                style="box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.25);">
+        </div>
+    </div>
+
+
+    <div class="section-a" id="products">
+        <div class="section-a-inset">
+            <h2 data-i18n-key="product_service"></h2>
+            <div class="slider-box">
+                <div class="slick-carousel slick-carousel1">
+
+                    <div>
+                        <div>
+                            <img src="kichigala/public/images/pages/Picsart_23-06-30_11-41-54-338.jpg" alt="">
+                            <h3 data-i18n-key="sement_bag"></h3>
+
+                            <span class="product-description-mc">
+                                <p data-i18n-key="product_topic_one"></p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <img src="kichigala/public/images/pages/2.jpg" alt="">
+                            <h3 data-i18n-key="durable_bags"></h3>
+
+                            <span class="product-description-mc">
+                                <p data-i18n-key="product_topic_two"></p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <img src="kichigala/public/images/pages/3.jpg" alt="">
+                            <h3 data-i18n-key="laminated_bags"></h3>
+
+                            <span class="product-description-mc">
+                                <p data-i18n-key="product_topic_three"></p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <img src="kichigala/public/images/pages/4.jpg" alt="">
+                            <h3 data-i18n-key="hdpe_bugs"></h3>
+
+                            <span class="product-description-mc">
+                                <p data-i18n-key="product_topic_four"></p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <img src="kichigala/public/images/pages/5.jpg" alt="">
+                            <h3 data-i18n-key="polypropylene_yarn"></h3>
+
+                            <span class="product-description-mc">
+                                <p data-i18n-key="product_topic_five"></p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div>
+                            <img src="kichigala/public/images/pages/6.jpg" alt="">
+                            <h3 data-i18n-key="50kg_bugs"></h3>
+
+                            <span class="product-description-mc">
+                                <p data-i18n-key="product_topic_six"></p>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="all-btn all-product" data-i18n-key="see_all_products"></a>
+        </div>
+    </div>
+
+    <div class="section-b">
+        <div class="section-b-inset">
+            <div class="s-b-box">
+                <img src="https://kichigala.com/public/images/icons/users.svg" alt="">
+                <h3 data-i18n-key="direct_sales"></h3>
+                <p data-i18n-key="sales_strategy"></p>
+            </div>
+            <div class="s-b-box">
+                <img src="https://kichigala.com/public/images/icons/crown.svg" alt="">
+                <h3 data-i18n-key="quality_products"></h3>
+                <p data-i18n-key="quality_topic"> </p>
+            </div>
+            <div class="s-b-box">
+                <img src="https://kichigala.com/public/images/icons/discount.svg" alt="">
+                <h3 data-i18n-key="individual_service"></h3>
+                <p data-i18n-key="individual_service_topic"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-c" id="comand">
+        <div class="section-c-inset">
+            <h2 data-i18n-key="our_team"></h2>
+            <div class="section-c-container">
+
+
+                <div class="s-c-box">
+                    <div class="s-c-social-box">
+                        <div class="s-c-social-box-inset">
+                            <a target="_blank" class="profile-instagram" href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a target="_blank" class="profile-mail" href="#">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                            <a target="_blank" class="profile-phone" href="#">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="kichigala/public/images/team/1.jpg" alt="">
+                    <h3 data-i18n-key="sherzod_haydarov"></h3>
+                    <p data-i18n-key="sales_manager"></p>
+                </div>
+
+                <div class="s-c-box">
+                    <div class="s-c-social-box">
+                        <div class="s-c-social-box-inset">
+                            <a target="_blank" class="profile-instagram" href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a target="_blank" class="profile-mail" href="#">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                            <a target="_blank" class="profile-phone" href="#">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="kichigala/public/images/team/2.jpg" alt="">
+                    <h3 data-i18n-key="safarov_ozodbek"></h3>
+                    <p data-i18n-key="sales_manager"></p>
+                </div>
+
+                <div class="s-c-box">
+                    <div class="s-c-social-box">
+                        <div class="s-c-social-box-inset">
+                            <a target="_blank" class="profile-instagram" href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a target="_blank" class="profile-mail" href="#">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                            <a target="_blank" class="profile-phone" href="#">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="kichigala/public/images/team/3.jpg" alt="">
+                    <h3 data-i18n-key="mahmadqulov_rustam"></h3>
+                    <p data-i18n-key="manager"></p>
+                </div>
+
+                <div class="s-c-box">
+                    <div class="s-c-social-box">
+                        <div class="s-c-social-box-inset">
+                            <a target="_blank" class="profile-instagram" href="#">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a target="_blank" class="profile-mail" href="#">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                            <a target="_blank" class="profile-phone" href="#">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <img src="kichigala/public/images/team/4.jpg" alt="">
+                    <h3 data-i18n-key="gayrat_majidov"></h3>
+                    <p data-i18n-key="accountant"></p>
+                </div>
+
+            </div>
+            <a href="#" class="all-btn all-team" data-i18n-key="meet_all_team"></a>
+        </div>
+    </div>
+
+    <div class="section-a" id="products" style="border-top: 1px dashed; background: #022B4B;">
+        <div class="section-a-inset">
+            <h2 style="color: #fff;" data-i18n-key="partners"></h2>
+            <div class="slider-box">
+                <div class="slick-carousel slick-carousel2">
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/7.jpg" alt="">
+                    </div>
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/8.jpg" alt="">
+                    </div>
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/9.png" alt="">
+                    </div>
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/10.jpg" alt="">
+                    </div>
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/11.png" alt="">
+                    </div>
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/12.png" alt="">
+                    </div>
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/2.jpg" alt="">
+                    </div>
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/3.jpg" alt="">
+                    </div>
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/4.jpg" alt="">
+                    </div>
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/5.jpg" alt="">
+                    </div>
+
+                    <div style="aspect-ratio: 1; vertical-align: middle; display: flex; align-items: center;">
+                        <img style="width: 100%; height: auto;" src="kichigala/public/images/partners/6.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="section-d">
+        <div class="section-d-inset">
+            <h2>Последние новости в промышленности</h2>
+            <div class="section-d-container">
+                <div class="slick-news-carousel">
+
+                    <div>
+                        <a class="section-d-box" href="#">
+                            <img src="kichigala/public/images/pages/DSC02036-min.jpg" alt="#">
+                            <div class="section-d-box-inset">
+                                <h3>Разгар нового сезона!</h3>
+                                <p> Опубликовано:
+                                    18.07.2023 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="section-d-box" href="#">
+                            <img src="kichigala/public/images/pages/jason-blackeye-zAITDJYV09w-unsplash.jpg" alt="">
+                            <div class="section-d-box-inset">
+                                <h3></h3>
+                                <p> Опубликовано:
+                                    23.05.2023 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="section-d-box" href="#">
+                            <img src="kichigala/public/images/pages/T8ojxAT56gXRt7WdQTbi-820x720-1.png" alt="">
+                            <div class="section-d-box-inset">
+                                <h3>Конференция и выставка «Международные транспортно-транзитные коридоры: взаимосвязь и
+                                    развитие - 2023»</h3>
+                                <p> Опубликовано:
+                                    23.05.2023 </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="section-d-box" href="#">
+                            <img src="kichigala/public/images/pages/IMG-0386-2.jpg" alt="">
+                            <div class="section-d-box-inset">
+                                <h3>Выставка "K 22" c 19 по 26 октября в городе Дюссельдорф, Германия.</h3>
+                                <p> Опубликовано:
+                                    16.05.2023 </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="all-btn all-news">Читать все новости</a>
+        </div>
+    </div> -->
+
+    <div id="offer" class="section-e">
+        <div class="section-e-inset">
+            <div class="section-e-l">
+                <h2 data-i18n-key="contact_us"></h2>
+                <p data-i18n-key="contact_us_topic">
+
+                </p>
+                <form action="#" method="post">
+                    <input type="hidden" name="csrf_name">
+                    <input type="hidden" name="csrf_value">
+                    <div class="form-up">
+                        <input name="name" required type="text" data-i18n-placeholder="first_name">
+                        <input name="surname" required type="text" data-i18n-placeholder="last_name">
+                    </div>
+                    <div class="form-bottom">
+                        <input name="email" required type="email" data-i18n-placeholder="el_address">
+                        <input name="phone" required type="text" data-i18n-placeholder="telephone">
+                    </div>
+                    <textarea required name="message" id="" cols="20" rows="10" data-i18n-placeholder="msg"></textarea>
+                    <button type="submit" data-i18n-key="send"></button>
+                </form>
+            </div>
+            <div class="section-e-r">
+                <h2 data-i18n-key="contact_info"></h2>
+                <div class="s-e-r-box ser1">
+                    <span data-i18n-key="phone"></span>
+                    <span><a href="#">+993 98 573-2485</a><br>
+                        <a href="#">+993 63 573-2530</a></span>
+                </div>
+                <div class="s-e-r-box ser2">
+                    <span data-i18n-key="email"></span>
+                    <a href="#">baxt_polimer@mail.ru</a>
+                </div>
+                <div class="s-e-r-box ser3">
+                    <span data-i18n-key="location"></span>
+                    <a target="_blank" href="#">Uzbekistan, Samarkand region, Urgut
+                        city, Mergancha district
+                    </a>
+                </div>
+                <div class="s-e-r-box ser4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3082.0467353892946!2d67.19866482137687!3d39.42306761762663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4ccf4ba8a72533%3A0x55da48082fdbac77!2sMergancha!5e0!3m2!1suz!2s!4v1695710665933!5m2!1suz!2s"
+                        width="400%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-inset">
+            <div class="footer-box f1">
+                <img style="object-fit: contain; width: auto;" src="kichigala/public/images/logo/logo.png" alt="">
+                <p>Наша компания была основана в 2015 году группой молодых предпринимателей, которые разделяли видение
+                    предоставления высококачественной продукции по доступной цене.</p>
+                <p>Добро пожаловать в Baxt Polimer, ведущего производителя и экспортера в Узбекистане!</p>
+            </div>
+            <div class="footer-box-outset">
+                <div class="footer-box f2">
+                    <a href="#" data-i18n-key="our_company"></a>
+                    <a href="#products" data-i18n-key="products"></a>
+                    <a href="#comand" data-i18n-key="our_team"></a>
+                </div>
+                <div class="footer-box f4">
+                    <span data-i18n-key="location"></span>
+                    <a target="_blank" href="#">
+                        Uzbekistan, Samarkand region, Urgut
+                        city, Mergancha district
+                    </a>
+                    <span data-i18n-key="phone"></span>
+                    <span class="footer-phone-box">
+                        <a href="#">+993 98 573-2485</a><br>
+                        <a href="#">+993 63 573-2530</a>
+                    </span>
+                    <span data-i18n-key="email"></span>
+                    <a href="#">baxt_polimer@mail.ru</a>
+                    <span data-i18n-key="work_time"></span>
+                    <span>
+                        <p data-i18n-key="mon_sat">Понедельник - Суббота</p>
+                        <p data-i18n-key="9_18"></p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="jquery/jquery-migrate-3.4.1.min.js" integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="kichigala/public/js/all.js"></script>
+    <script src="ajax/i18n/lang.js"></script>
+    <script>
+        $(window).scroll(function () {
+            if ($(window).scrollTop() >= 41) {
+                $('#myHeader').addClass('stickyheader');
+            } else {
+                $('#myHeader').removeClass('stickyheader');
+            }
+        });
+
+
+        $(".offer-btn").on("click", function (event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $("#offer").offset().top - 50
+            }, 1000);
+        });
+
+
+        var submenus = document.getElementsByClassName("submenu");
+
+        for (var i = 0; i < submenus.length; i++) {
+            submenus[i].addEventListener("click", function () {
+
+                this.classList.toggle("activated");
+
+                var submenu = this.nextElementSibling;
+                if (submenu.style.maxHeight) {
+                    submenu.style.maxHeight = null;
+                    submenu.style.transition = "max-height 0.5s ease-out";
+                } else {
+                    submenu.style.maxHeight = submenu.scrollHeight + "px";
+                    submenu.style.transition = "max-height 0.5s";
+                }
+            });
+        }
+
+
+        (function () {
+            function id(v) { return document.getElementById(v); }
+            function loadbar() {
+                var ovrl = id("overlay"),
+                    prog = id("progress"),
+                    stat = id("progstat"),
+                    img = document.images,
+                    c = 0,
+                    tot = img.length;
+                if (tot === 0) return doneLoading();
+
+                function imgLoaded() {
+                    c += 1;
+                    var perc = ((100 / tot * c) << 0) + "%";
+                    prog.style.width = perc;
+                    stat.innerHTML = "Loading " + perc;
+                    if (c === tot) return doneLoading();
+                }
+                function doneLoading() {
+                    ovrl.style.opacity = 0;
+                    setTimeout(function () {
+                        ovrl.style.display = "none";
+                    }, 1200);
+                }
+                for (var i = 0; i < tot; i++) {
+                    var tImg = new Image();
+                    tImg.onload = imgLoaded;
+                    tImg.onerror = imgLoaded;
+                    tImg.src = img[i].src;
+                }
+            }
+            document.addEventListener('DOMContentLoaded', loadbar, false);
+        }());
+
+
+    </script>
+</body>
+
+</html>
